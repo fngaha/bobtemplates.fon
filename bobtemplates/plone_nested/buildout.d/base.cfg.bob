@@ -3,7 +3,7 @@ extends = versions.cfg
 
 package-name = {{{ package.namespace }}}.{{{ package.name }}}
 package-extras = [test]
-package-min-coverage = {{{ package-min-coverage }}}
+package-min-coverage = 80
 
 eggs +=
     {{{ package.namespace }}}.{{{ package.name }}}

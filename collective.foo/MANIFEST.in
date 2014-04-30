@@ -1,4 +1,0 @@
-include *.cfg *.rst *.in *.txt
-graft src/fon
-graft docs
-global-exclude *pyc
