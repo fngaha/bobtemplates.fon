@@ -3,14 +3,24 @@ python:
   - 2.7
 
 install:
-  - python bootstrap.py -d
+  - python bootstrap.py
   - bin/buildout
 
 script:
-  - bin/nosetests
-  - bin/mrbob -O collective.foo --config test_answers.ini ./bobtemplates/plone_addon
-  - bin/mrbob -O collective.foo.bar --config test_answers_nested.ini ./bobtemplates/plone_addon_nested
+  - bin/coverage run --source=tests.py --branch bin/nosetests
+  - bin/coverage html -i
+  - bin/mrbob -O plone.foo --config test_answers.ini ./bobtemplates/plone
+  - cd plone.foo
+  - make
+  - cd ..
+  - bin/mrbob -O foo --config test_answers.ini ./bobtemplates/pyramid
+  - cd foo
+  - make
+
+after_success:
+ - pip install python-coveralls==2.4.0
+ - coveralls
 
 notifications:
-  email:                                                                       
-    - franck.o.ngaha@gmail.com
+ email:
+  - franck.o.ngaha@gmail.com
