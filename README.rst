@@ -6,7 +6,7 @@ Plone projects.
 
 Available templates are:
 
-* `Plone`_: a template for a full featured Plone add-on, including:
+* `Plone`_, `Plone_nested`_: templates for a full featured Plone add-on, including:
 
   * zc.buildout
   * GenericSetup install profile
@@ -31,6 +31,9 @@ online.
 Creating a Plone add-on package
 -------------------------------
 
+To create a Plone add-on first install ``mr.bob`` and
+the ``bobtemplates.fon`` package and then run `mrbob`::
+
     $ pip install mr.bob
     $ pip install bobtemplates.fon
     $ mrbob --config ~/.mrbob.ini -O collective.foo bobtemplates:plone
@@ -43,3 +46,11 @@ Then answer some questions::
     ...
 
 And your package is ready!
+
+
+.. _mr.bob: http://mrbob.readthedocs.org/en/latest/
+.. _Plone: http://plone.org
+.. _Plone_nested: http://plone.org
+.. _z3c.jbot: http://pypi.python.org/pypi/z3c.jbot
+.. _Sphinx: http://sphinx-doc.org/
+.. _Travis CI: http://travis-ci.org/
