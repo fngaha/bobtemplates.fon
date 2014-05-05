@@ -3,19 +3,13 @@ python:
   - 2.7
 
 install:
-  - python bootstrap.py
+  - python bootstrap.py -d
   - bin/buildout
 
 script:
-  - bin/coverage run --source=tests.py --branch bin/nosetests
-  - bin/coverage html -i
-  - bin/mrbob -O plone.foo --config test_answers.ini ./bobtemplates/plone
-  - cd plone.foo
-  - make
-  - cd ..
-  - bin/mrbob -O foo --config test_answers.ini ./bobtemplates/pyramid
-  - cd foo
-  - make
+  - bin/nosetests
+  - bin/mrbob -O collective.foo --config test_answers.ini ./bobtemplates/plone
+  - bin/mrbob -O collective.foo.bar --config test_answers_nested.ini ./bobtemplates/plone_nested
 
 after_success:
  - pip install python-coveralls==2.4.0
