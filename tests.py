@@ -175,7 +175,6 @@ class PloneTemplateTest(BaseTemplateTest):
                 self.project + '/src/collective/foo/bar/content/configure.zcml',
                 self.project + '/src/collective/foo/bar/interfaces.py',
                 self.project + '/src/collective/foo/bar/locales',
-                self.project + '/src/collective/foo/bar/locales/collective.foo.bar.pot',
                 self.project + '/src/collective/foo/bar/locales/fr',
                 self.project + '/src/collective/foo/bar/locales/fr/LC_MESSAGES',
                 self.project + '/src/collective/foo/bar/locales/fr/LC_MESSAGES/collective.foo.bar.po',
