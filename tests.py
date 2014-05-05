@@ -46,6 +46,7 @@ class PloneTemplateTest(BaseTemplateTest):
         self.template = 'plone'
         self.project = 'collective.foo'
         self.answers_file = 'test_answers.ini'
+        self.maxDiff = None
         result = self.create_template()
         self.assertItemsEqual(
             result.files_created.keys(),
