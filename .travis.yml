@@ -7,18 +7,9 @@ install:
   - bin/buildout
 
 script:
-  - bin/coverage run --source=tests.py --branch bin/nosetests
-  - bin/coverage html -i
+  - bin/nosetests
   - bin/mrbob -O plone.foo --config test_answers.ini ./bobtemplates/plone
-  - cd plone.foo
-  - make
   - bin/mrbob -O plone.foo.bar --config test_answers_nested.ini ./bobtemplates/plone_nested
-  - cd plone.foo.bar
-  - make
-
-after_success:
- - pip install python-coveralls==2.4.0
- - coveralls
 
 notifications:
  email:
