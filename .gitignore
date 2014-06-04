@@ -17,3 +17,11 @@ fake-eggs/
 parts/
 dist/
 var/
+.installed.cfg
+.mr.developer.cfg
+.project
+.pydevproject
+.settings/
+buildout-cache/
+src/*
+!src/bobtemplates
