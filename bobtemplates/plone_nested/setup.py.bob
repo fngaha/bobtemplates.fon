@@ -39,33 +39,16 @@ setup(
     zip_safe=False,
     install_requires=[
         'five.grok',
-        'five.pt',
-        'Pillow',
-        'Plone',
         'plone.api',
         'setuptools',
-        'z3c.jbot',
     ],
     extras_require={
         'test': [
-            'mock',
             'plone.app.testing',
             'plone.app.robotframework',
         ],
         'develop': [
-            'coverage',
-            'flake8',
-            'jarn.mkrelease',
-            'niteoweb.loginas',
-            'plone.app.debugtoolbar',
-            'plone.reload',
-            'Products.Clouseau',
-            'Products.DocFinderTab',
-            'Products.PDBDebugMode',
-            'Products.PrintingMailHost',
-            'Sphinx',
             'zest.releaser',
-            'zptlint',
         ],
     },
     entry_points="""
