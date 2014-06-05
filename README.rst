@@ -1,3 +1,8 @@
+.. image:: https://secure.travis-ci.org/fngaha/bobtemplates.fon.png
+    :target: http://travis-ci.org/#!/fngaha/bobtemplatesfon
+.. image:: https://coveralls.io/repos/fngaha/bobtemplates.fon/badge.png?branch=master
+    :target: https://coveralls.io/r/fngaha/bobtemplates.fon
+
 Introduction
 ============
 
