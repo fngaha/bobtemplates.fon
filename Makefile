@@ -16,9 +16,8 @@ run:
 	bin/instance fg
 
 test:
-	if ! test -f bin/test;then make buildout;fi
-	rm -fr htmlcov
-	bin/coverage.sh
+	if ! test -f bin/nosetests;then make buildout;fi
+	bin/nosetests
 
 cleanall:
 	rm -fr bin develop-eggs htmlcov include .installed.cfg lib .mr.developer.cfg parts downloads eggs
