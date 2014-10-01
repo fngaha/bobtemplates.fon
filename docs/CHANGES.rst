@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.3 (unreleased)
+0.3 (2014-10-01)
 ----------------
 
 - Begin with dev version
