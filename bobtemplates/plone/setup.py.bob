@@ -18,7 +18,7 @@ long_description = \
 
 setup(
     name='{{{ package.namespace }}}.{{{ package.name }}}',
-    version='{{{ package.version }}}',
+    version='{{{ package.version }}}dev',
     description="{{{ package.description }}}",
     long_description=long_description,
     # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
