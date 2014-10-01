@@ -5,7 +5,7 @@ Changelog
 0.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Begin with dev version
 
 
 0.2 (2014-09-23)
